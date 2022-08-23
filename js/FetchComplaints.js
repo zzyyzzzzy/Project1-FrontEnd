@@ -28,7 +28,6 @@ const renderTable = async () => {
     for(let i = 0; i < complaintList.length; i++){
         const element = complaintList[i];
         const {id, summary, priority, meetingId} = element;
-        
         const newRow = table.insertRow();
         const cell1 = newRow.insertCell();
         const cell2 = newRow.insertCell();
@@ -41,7 +40,15 @@ const renderTable = async () => {
         cell3.innerText = meetingAssigned;
         cell4.innerText = priority;
 
-
+        // if meeting assigned, you cannot change the priority
+        if(meetingId != -1){
+            const btnDisabled = document.createElement("button");
+            btnDisabled .innerText = "Priority Change Disabled";
+            btnDisabled.disabled = true;
+            btnDisabled.classList.add("btn", "btn-light");
+            cell5.appendChild(btnDisabled);
+            continue;
+        }
         // creating buttons
         const btnHigh = document.createElement("button");
         btnHigh.innerText = "High";
