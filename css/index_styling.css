@@ -7,7 +7,6 @@
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 50%;
   }
 
   body{
@@ -18,9 +17,9 @@
     background-size: cover;
   }
 
-  h1{
-    color:rgb(216, 145, 249);
+  h2{
+    color:rgb(199, 78, 255);
     font-family: 'Archivo', sans-serif;
+    font-size: 70px;
     text-shadow: 2px 2px #e7b7fa;
-    font-size: 50px;
   }
