@@ -34,6 +34,7 @@ const renderComplaintsTable = async () => {
             const label = document.createElement('label');
             label.classList.add('form-check-label');
             label.innerText = `${summary} - ${priority}`;
+            label.style = "color:white";
 
             wrapper_div.appendChild(checkbox);
             wrapper_div.appendChild(label);

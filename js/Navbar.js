@@ -18,12 +18,20 @@ const renderSignIn = ()=>{
     userLinks.innerHTML = "";
     const info = [
         {
+            innerText: "Report a Complaint",
+            herf: "../html/create_complaint.html"
+        },
+        {
+            innerText: "View Meetings",
+            herf: "../html/view_meetings.html"
+        },
+        {
             innerText: "Login",
             herf: "../html/login.html"
         },
         {
-            innerText: "Sign Up",
-            herf: "../html/signup.html"
+            innerText: "Sign up",
+            herf: "../html/sign_up.html"
         }
     ]
     constructList(info);
@@ -69,12 +77,16 @@ const renderSignInAsCouncil = () => {
             herf: "../html/create_meeting.html"
         },
         {
+            innerText: "View Meetings",
+            herf: "../html/view_meetings.html"
+        },
+        {
             innerText: "Review Complaints",
             herf: "../html/review_complanits.html"
         },
         {
-            innerText: "View Meetings",
-            herf: "../html/view_meetings.html"
+            innerText: "Review Accounts",
+            herf: "../html/review_accounts.html"
         }
     ]
     constructList(info);

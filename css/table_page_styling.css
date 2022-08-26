@@ -1,0 +1,7 @@
+body{
+    background: url("https://pbs.twimg.com/media/EkWfDATXcAIL1GM?format=jpg&name=4096x4096") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
