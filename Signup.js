@@ -27,7 +27,7 @@ document.addEventListener("submit", async (event) => {
     console.log(response);
     if(response.status === 201){
         alert("Successfully requested an account");
-        window.location = "../html/index.html";
+        window.location = "index.html";
     }else{
         alert("Something went wrong!");
     }
