@@ -19,19 +19,19 @@ const renderSignIn = ()=>{
     const info = [
         {
             innerText: "Report a Complaint",
-            herf: "../html/create_complaint.html"
+            herf: "create_complaint.html"
         },
         {
             innerText: "View Meetings",
-            herf: "../html/view_meetings.html"
+            herf: "view_meetings.html"
         },
         {
             innerText: "Login",
-            herf: "../html/login.html"
+            herf: "login.html"
         },
         {
             innerText: "Sign up",
-            herf: "../html/sign_up.html"
+            herf: "sign_up.html"
         }
     ]
     constructList(info);
@@ -46,7 +46,7 @@ const renderSignOut = () => {
     a.addEventListener("click", (e)=>{
         localStorage.removeItem("app_user");
         renderSignIn();
-        window.location = "../html/index.html"
+        window.location = "index.html"
     });
     li.appendChild(a);
     userLinks.appendChild(li);
@@ -57,11 +57,11 @@ const renderSignInAsConsitutent = () => {
     const info = [
         {
             innerText: "Report a Complaint",
-            herf: "../html/create_complaint.html"
+            herf: "create_complaint.html"
         },
         {
             innerText: "View Meetings",
-            herf: "../html/view_meetings.html"
+            herf: "view_meetings.html"
         }
     ]
     constructList(info);
@@ -74,19 +74,19 @@ const renderSignInAsCouncil = () => {
     const info = [
         {
             innerText: "Create a Meeting",
-            herf: "../html/create_meeting.html"
+            herf: "create_meeting.html"
         },
         {
             innerText: "View Meetings",
-            herf: "../html/view_meetings.html"
+            herf: "view_meetings.html"
         },
         {
             innerText: "Review Complaints",
-            herf: "../html/review_complanits.html"
+            herf: "review_complanits.html"
         },
         {
             innerText: "Review Accounts",
-            herf: "../html/review_accounts.html"
+            herf: "review_accounts.html"
         }
     ]
     constructList(info);
@@ -107,12 +107,5 @@ function renderComponents(){
        alert("Somthing went wrong");
     }
 }
-
-{/* <li class="nav-item">
-<a class="nav-link" aria-current="page" href="#">Login</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Sign Up</a>
-</li> */}
 
 renderComponents();

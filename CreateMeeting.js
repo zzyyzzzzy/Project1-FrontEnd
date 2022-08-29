@@ -5,7 +5,7 @@ const addressBody = document.getElementById("address-body");
 const submitMeetingBtn = document.getElementById("submit-meeting");
 let temp ;
 
-const baseUrl = "http://localhost:8080";
+const baseUrl = "https://zzj-proj1-server.ashygrass-f1ffcec2.westus.azurecontainerapps.io";
 
 
 const getComplaintlist = async () => {

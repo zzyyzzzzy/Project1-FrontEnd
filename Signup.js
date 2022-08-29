@@ -5,7 +5,7 @@ const userNameBody = document.getElementById("username-body");
 const pwdBody = document.getElementById("pwd-body");
 
 
-const baseUrl = "http://localhost:8080";
+const baseUrl = "https://zzj-proj1-server.ashygrass-f1ffcec2.westus.azurecontainerapps.io";
 
 document.addEventListener("submit", async (event) => {
     event.preventDefault();

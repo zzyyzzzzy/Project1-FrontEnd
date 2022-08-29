@@ -1,5 +1,5 @@
 const table = document.getElementById("user-table");
-const baseUrl = "http://localhost:8080";
+const baseUrl = "https://zzj-proj1-server.ashygrass-f1ffcec2.westus.azurecontainerapps.io";
 
 const getAllUsers = async () => {
     //https://api.coingecko.com/api/v3/coins

@@ -1,7 +1,7 @@
 const usernameBody = document.getElementById("username-body");
 const pwdBody = document.getElementById("pwd-body");
 
-const baseUrl = "http://localhost:8080";
+const baseUrl = "https://zzj-proj1-server.ashygrass-f1ffcec2.westus.azurecontainerapps.io";
 
 
 document.addEventListener("submit", async event => {
@@ -25,7 +25,7 @@ document.addEventListener("submit", async event => {
             app_user.password = null;
             localStorage.setItem("app_user", JSON.stringify(app_user));
             alert("login successful");
-            window.location = "../html/index.html";
+            window.location = "html/index.html";
         } else{
             alert("Your account is wating for approval");
         }
