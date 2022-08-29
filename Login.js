@@ -25,7 +25,7 @@ document.addEventListener("submit", async event => {
             app_user.password = null;
             localStorage.setItem("app_user", JSON.stringify(app_user));
             alert("login successful");
-            window.location = "html/index.html";
+            window.location = "index.html";
         } else{
             alert("Your account is wating for approval");
         }
